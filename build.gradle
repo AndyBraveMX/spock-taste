@@ -42,13 +42,3 @@ task runScript (dependsOn: 'classes', type: JavaExec) {
     main = 'myscript'
     classpath = sourceSets.main.runtimeClasspath
 }
-
-test {
-    useJUnit {
-        includeCategories 'spock.tests.UnitTest'
-    }
-    testLogging {
-        showStandardStreams = true
-    }
-}
-
