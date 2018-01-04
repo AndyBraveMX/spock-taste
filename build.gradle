@@ -19,7 +19,8 @@ repositories {
 }
 
 dependencies {
-	compile 'org.codehaus.groovy:groovy-all:2.0.5'
+	// https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all
+	compile group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.5.0-alpha-1'
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:23.0'
@@ -33,7 +34,8 @@ dependencies {
             'junit:junit:4.12',
             'org.codehaus.groovy:groovy-all:2.4.11',
             'org.spockframework:spock-core:1.1-groovy-2.4',
-            'org.spockframework:spock-spring:1.0-groovy-2.3'
+            'org.spockframework:spock-spring:1.0-groovy-2.3',
+            'org.springframework:spring-test:5.0.2.RELEASE'
     )
 	
 }

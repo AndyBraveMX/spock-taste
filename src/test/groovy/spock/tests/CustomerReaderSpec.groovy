@@ -1,3 +1,5 @@
+package spock.tests;
+
 import entities.Customer;
 import entities.CustomerReader;
 import javax.persistence.EntityManager
@@ -23,7 +25,7 @@ public class CustomerReaderSpec extends Specification{
     String fullName = customerReader.findFullName(1L)
 
     then: "we get both the first and the last name"
-    fullName == "Susan Ivaova"
+    fullName == "Susan Ivanova"
   }
 
 }

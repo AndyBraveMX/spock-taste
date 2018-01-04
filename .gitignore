@@ -14,6 +14,12 @@ Thumbs.db
 build/
 target/
 bin/
+
+# gradle
+gradlew
+gradlew.bat
+gradle/
+
 dependency-reduced-pom.xml
 
 # Eclipse Project Files
